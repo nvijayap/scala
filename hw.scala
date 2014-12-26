@@ -1,12 +1,14 @@
-// -----------------------------------
+// -----------------------------------------------
+//
+// File: hw.scala (hw: hello world)
 //
 // Running -
 //
-// $ scala hw.scala
+// $ scala hw.scala // hw stands for hello world
 //
-// -----------------------------------
+// -----------------------------------------------
 
-object hw {
+object hw { // hw stands for hello world
 
   def main(args: Array[String]) {
 
