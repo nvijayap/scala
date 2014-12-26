@@ -1,6 +1,6 @@
 // -----------------------------------
 //
-// Running -
+// Compiling and Running -
 //
 // $ scalac hw2.scala && scala hw2
 //
