@@ -10,23 +10,23 @@
  */
 object NextHigher extends App {
 
-	private def isNumeric(input: String): Boolean = { input.forall(_.isDigit) }
+  private def isNumeric(input: String): Boolean = { input.forall(_.isDigit) }
 
-	if (args.length != 1 || args(0).length() < 2 || !isNumeric(args(0))) {
-		println("=> Need a positive integer of minimally two digits as arg")  
-	}
+  if (args.length != 1 || args(0).length() < 2 || !isNumeric(args(0))) {
+    println("=> Need a positive integer of minimally two digits as arg")  
+  }
 
   val number = args(0).toInt
-  
+
   private def getNextHigher(array: Array[String]): Int = {
     array.foreach {
       n => if (n.toInt > number) return n.toInt
     }
-    -1
+  -1
   }
-    
+
   val nextHigher = getNextHigher(number.toString.permutations.toArray.sorted) 
-  
+
   nextHigher match {
     case -1 => println("Next Higher Number Not Found")
     case _ => println(nextHigher)
